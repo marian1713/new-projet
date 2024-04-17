@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,500;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=B612+Mono:wght@400;700&display=swap');
+
+
+.fondo {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    background-position: center;
+    z-index: -1;
+
+}
+
+#containerTitulo {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    text-align: center;
+    justify-content: space-between;
+    margin-left: 400px;
+    margin-bottom: 30px;
+    border: rgb(116, 209, 221) 5px solid;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    width: 600px;
+    height:100px;
+    top: 15px;
+}
+
+
+#tituloPrimero{
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    color: rgb(91, 170, 170);
+    text-decoration: underline rgb(165, 146, 165);
+
+}
+#tituloPrimero::first-letter{
+    font-family: 'Times New Roman', Times, serif;
+}
+#nombreMio{
+    font-family: "Montserrat Alternates", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    color: rgb(94, 194, 194);
+    padding: 10px;
+    text-decoration: underline rgb(165, 146, 165);
+
+}
+
+    #containerMio{
+        display: flex;
+        position: relative;
+        top: 150px;
+        float: inline-end;
+        right:15px;
+        width: 600px;
+        height: 420px;
+        border-style: double;
+        border-color:rgb(139, 47, 135);
+        border-radius: 50px 10px 50px 10px;
+        z-index: 1;
+    }
+#textoMio{
+    padding-top: 20px;
+    margin-left: 15px;
+    font-family: "B612 Mono", monospace;
+    font-weight: 500;
+    font-style: normal;
+    color: rgb(241, 173, 232);
+
+}
+#fotoMia{
+    margin-top: 10px;
+    margin-bottom: 5px;
+    width: auto;
+    height: auto;
+    padding-right: 15px;
+    border-radius: 50px;
+}
+
+#techFavoritas{
+    width: 650px;
+    height:300px ;
+    border-style: double;
+    border-top-left-radius: 20px;
+    border-top-color: magenta;
+    border-bottom-right-radius: 20px;
+    border-bottom-color: darkmagenta;
+    border-width: 10px;
+    position: relative;
+    top: 200px;
+    bottom: auto;
+    left: 15px;
+    float: inline-start;
+    text-align: center;
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 400;
+    padding-top: 10px;
+    color: rgba(236, 4, 167, 0.432);
+
+}
+
+#techFavoritas img{
+    background-color: rgb(124, 116, 116);
+    border-radius: 15px;
+    border-style: double;
+    border-color: rgb(14, 38, 175);
+    margin-top: 50px;
+    width: 100px;
+    height: 150px;
+    transition: background-color 10s, border 0.5s, -webkit-transform 3s, transform5s; 
+}
+#techFavoritas img:hover{
+    opacity: 0.5;
+    transform: rotate(-10deg);
+    -webkit-transform: rotate(-10deg);
+    cursor: pointer;
+    background-color: rgb(68, 125, 189);
+    border-color: rgb(68, 125, 189)
+
+}
+#techFavoritas li{
+    display: flex;
+    justify-content: space-around;
+}
+
+#formActividad{
+    display: flex;
+    position: relative;
+    top: 600px;
+    margin-right: 650px;
+    justify-content: center;
+    align-items: center;
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 400;
+    color: tomato;
+}
+
+#formActividad input{
+    width: 600px;
+    height: 40px;
+    padding: 5px 10px;
+    margin: 10px;
+    border-style: double;
+    border-radius: 30px;
+
+}
+#formActividad input::placeholder{
+    color: #ccc;
+    font-style: italic;
+    font-size: 15px;
+}
+
+#formActividad label{
+    padding: 10px 15px;
+}
+
+#formActividad textarea{
+    width: 600px;
+    height: 150px;
+    padding: 15px 10px;
+    margin: 10px;
+    border-style: double;
+    border-radius: 30px;
+    resize: none;
+}
+
+#formActividad legend{
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(230, 111, 103);
+    font-size: 30px;
+
+}
+#formActividad button{
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(230, 111, 103);
+    font-size: 20px;
+    font-weight: 600px;
+    border-style: dotted;
+    border-color: rgba(236, 4, 167, 0.432);
+    border-radius: 15px;
+    width: 300px;
+    height: 40px;
+    margin-left:160px;
+    background-color: rgb(221, 201, 221);
+}
+#formActividad button:hover{
+    opacity: 0.5;
+    transform: translateY(-5px);
+    cursor: pointer;
+    background-color: rgb(231, 217, 221);
+    border-color: rgb(200, 12, 238)
+}
+
+#contentCard{
+    font-family: Verdana, Geneva, Tahoma, sans-serif black;
+    font-size: 30px;
+    width: 400px;
+    position: relative; 
+    top: 600px;/* o static, según corresponda */
+    z-index: 0;;
+}
+
+#miFooter{
+    display: flex;
+    position: relative;
+    align-items: center;
+    margin-top: 80em;
+    justify-content: center;
+    font-family: "B612 Mono", monospace;
+    font-weight: 500;
+    font-style: normal;
+    color: antiquewhite;
+
+
+}
+
+#miFooter img{
+    width: 50px;
+    height: 50px;
+}
+
+.tituloContenedor{
+    position: relative;
+    margin-top: -38px;
+    width: 300px;
+    display: flex;
+    font-family: "B612 Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    color: rgb(198, 191, 216);    
+}
+
+#contentCard{
+    display: flex;
+    margin-top: 100px;
+    justify-content: center;
+    text-align: center;
+    border-style: double;
+    border-top-color: rgb(214, 47, 206);
+    border-bottom-color: rgb(214, 47, 206);
+    border-right-color: deepskyblue;
+    border-left-color: deepskyblue;
+    width: 100vw;
+    height: 500px;
+    float: inline-start;
+  
+}
+
+
